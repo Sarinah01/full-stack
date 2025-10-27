@@ -1,0 +1,18 @@
+ body{
+    background-color: cadetblue;
+ }
+.c1{
+    color: rgb(129, 145, 129)
+}
+.c2{
+    color:blue
+}
+p.c1{
+    color: yellow;
+}
+#id1{
+    color:yellowgreen
+}
+#id1.h2{
+    color:yellowgreen
+}
