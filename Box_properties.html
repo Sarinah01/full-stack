@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-properties</title>
+</head>
+<style>
+    body{
+        background-color: rgba(0,0,0,0.1);
+    }
+#d3{
+    margin-top: 40px;
+    border:3px  dashed rgb(165, 58, 76);
+    padding: 16px;
+    height: 120px;
+    margin: 7px auto;
+    text-align: justify;
+    background-image: url(cat.jfif);
+    box-shadow: 5px 7px 10px gray;
+}   
+.d1{
+    margin-top: 40px;
+    border:3px  dashed rgb(165, 58, 76);
+    padding: 16px;
+    height: 120px;
+    margin: 7px auto;
+    text-align: justify;
+    background-image: url(cloud.jfif);
+    box-shadow: 5px 7px 10px gray;
+} 
+#p1{
+    margin-top: 40px;
+    border:3px  dashed rgb(165, 58, 76);
+    padding: 16px;
+    height: 120px;
+    margin: 7px auto;
+    text-align: justify;
+    background-image: url(cat.jfif);
+    background-repeat: repeat-y;
+    background-position: center;
+    box-shadow: 5px 7px 10px gray;
+}
+.d2{
+    margin-top: 40px;
+    border:3px  dashed rgb(165, 58, 76);
+    padding: 16px;
+    height: 120px;
+    margin: 7px auto;
+    text-align: justify;
+    background-image: url(cat.jfif);
+    background-repeat: repeat-y;
+    background-position: top-right;
+    box-shadow: 5px 7px 10px gray;
+}
+.d3{
+    margin-top: 40px;
+    border:3px  dotted rgb(165, 58, 76);
+    padding: 16px;
+    height: 120px;
+    margin: 7px auto;
+    text-align: justify;
+    background-image: url(cat.jfif);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 5px 7px 10px gray;
+}
+.d4{
+    margin-top: 60px;
+    border:3px  dotted rgb(165, 58, 76);
+    padding: 16px;
+    height: 720px;
+    margin: 30
+    px auto;
+    text-align: center;
+    background-image: url(cat.jfif);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100% 100%;
+    box-shadow: 5px 7px 10px rgb(255, 116, 116);
+    background-attachment: fixed;
+    
+}
+.d5{
+    margin-top: 60px;
+    border:3px  dotted rgb(72, 19, 172);
+    padding: 16px;
+    height: 720px;
+    margin: 30px auto;
+    text-align: center;
+    background-image: url(cloud.jfif);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100% 100%;
+    box-shadow: 5px 7px 10px rgb(105, 78, 180);
+    background-attachment: scroll;
+    overflow: auto;
+    
+}
+.d6{
+    margin-top: 60px;
+    border:3px  dotted rgb(72, 19, 172);
+    padding: 16px;
+    height: 720px;
+    margin: 30px auto;
+    text-align: center;
+    background-image: url(cloud.jfif);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100% 100%;
+    box-shadow: 5px 7px 10px rgb(105, 78, 180);
+    background-attachment: scroll;
+    background-clip: padding-box;
+    overflow: auto;
+    
+}
+.d7{
+    margin-top: 60px;
+    border:3px  dotted rgb(72, 19, 172);
+    padding: 16px;
+    height: 720px;
+    margin: 30px auto;
+    text-align: center;
+    background-image: url(cloud.jfif);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100% 100%;
+    box-shadow: 5px 7px 30px rgb(105, 78, 180);
+    background-attachment: scroll;
+    background-clip: content-box;
+    overflow: auto;
+    
+}
+.d8{
+    margin-top: 60px;
+    border:3px  dotted rgb(23, 0, 65);
+    padding: 16px;
+    height: 720px;
+    width: 500px;
+    margin: 30px auto;
+    text-align: center;
+    background-image: url(cloud3.jfif);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100% 100%;
+    box-shadow: 5px 7px 30px rgb(21, 0, 78);
+    background-attachment:local;
+    background-clip: content-box;
+    overflow: auto;
+    
+}
+.d9{
+    margin-top: 60px;
+    border:3px  dotted rgb(23, 0, 65);
+    padding: 16px;
+    height: 420px;
+    width: 500px;
+    margin: 30px auto;
+    text-align: center;
+    background-image: url(cloud2.jfif);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100% 100%;
+    box-shadow: 5px 7px 30px rgb(21, 0, 78);
+    background-attachment:local;
+    background-clip: content-box;
+    overflow: auto;
+    
+}
+.d10{
+    margin-top: 60px;
+    border:3px  dotted rgb(23, 0, 65);
+    padding: 16px;
+    height: 420px;
+    width: 500px;
+    margin: 30px auto;
+    text-align: center;
+    background-image: url(cloud4.png);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 100% 100%;
+    box-shadow: 5px 7px 30px rgb(5, 41, 109);
+    background-attachment:local;
+    background-clip: content-box;
+    overflow: auto;
+    
+}
+a, input , label{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: capitalize;
+    padding: 25px;
+    margin-top: 20px;
+    border: 3px solid yellowgreen;
+    text-decoration: none;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    color:green;
+}
+a:active{
+    color:orange;
+}
+
+input:focus{
+    background-color: yellow;
+    color: black;
+}
+ul li:nth-child(3){
+    color: blue;
+    font-size:40px;
+}
+ul li:not(.special){
+    color:brown
+}
+</style>
+<body>
+    <div id ="d3">
+        para 1
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam veritatis soluta vero debitis eum vitae dicta quia quisquam quis ipsa, harum accusamus iusto deleniti doloremque aliquam eius qui magni perferendis.
+        Magnam eveniet temporibus aspernatur veritatis sapiente, tempora obcaecati soluta maiores amet, repudiandae quam consequuntur quaerat facere iste vitae maxime autem iusto distinctio. Delectus impedit similique corporis consequuntur fugit repudiandae sunt.
+        Ea esse unde ipsa minus! Nulla, corporis expedita voluptates voluptate fugiat minima pariatur sit? Ducimus voluptas hic inventore cumque quod sapiente, reiciendis quaerat ut, suscipit possimus dicta mollitia aperiam corrupti.
+        Voluptates dolorem quod nemo animi, dignissimos accusantium debitis voluptatibus unde distinctio maxime ratione, tempore ex cupiditate vitae aperiam harum consequatur. Beatae, suscipit explicabo voluptatum non quasi temporibus expedita doloribus incidunt.
+    </div>
+    <p id ="p1">
+        para 2
+        <br>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, at veniam excepturi obcaecati corrupti, ipsa adipisci consequatur quod culpa tempore fugiat ratione assumenda omnis atque earum libero deserunt. Molestias, doloremque?
+        Porro, architecto nemo a nam animi est officiis placeat autem perspiciatis. Iste alias fuga expedita laborum amet nemo mollitia earum id explicabo ipsam nostrum pariatur nihil laudantium qui, atque delectus.
+        Eum nihil praesentium accusantium veniam. Architecto non officiis quasi iure placeat ducimus quod ipsum repellendus sunt ab nobis, praesentium autem, velit nisi amet repellat quo magnam reprehenderit suscipit commodi. Ipsum!
+        Aperiam molestiae consequatur ducimus esse iure deserunt quaerat soluta adipisci nobis! Itaque necessitatibus nisi minus exercitationem repudiandae hic esse in excepturi tenetur, obcaecati ad quaerat a dolore nulla error molestiae?
+    </p>
+    <div class="d1">
+        div 2
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nam illum nihil itaque cum at praesentium recusandae culpa impedit. Beatae obcaecati veritatis facilis reprehenderit suscipit et nemo officia? Voluptatum, sed?
+        Fugiat officia incidunt autem cumque animi vitae, consequuntur mollitia tempora blanditiis voluptatem dignissimos minus dolorum aliquid repudiandae reiciendis, eos cum amet veritatis a in aspernatur impedit eius aperiam ex! Perferendis!
+        Neque fugit rerum sapiente quae sit doloribus, tempore, quas debitis placeat eius blanditiis inventore nam dolor enim? Tenetur accusamus, quo sit necessitatibus omnis praesentium voluptatibus, consequuntur distinctio vel fugit aliquid?
+        Facere dolor officiis natus, accusantium, quis harum adipisci facilis sequi ipsa ex perspiciatis minima hic expedita doloremque? Optio alias tenetur ratione molestiae velit? Quibusdam dolore qui facere minus. Qui, blanditiis.
+    </div>
+    <div class="d2">
+        div 3
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+    </div>
+    <div class="d3">
+        div 3
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+    </div>
+    <div class="d4">
+        div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+    </div>
+    <div class="d5">
+        div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+    div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  
+        div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  
+        div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  
+        div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  
+        div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  
+        div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  
+        div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  
+        div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  
+        div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  
+        div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  div 4
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+  
+    </div>
+    <div class="d6">
+        div 6
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+    </div>
+    <div class="d7">
+        div 7
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+    </div>
+    <div class="d8">
+        div 8
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+    </div>
+     <div class="d9">
+        div 8
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+    </div>
+     <div class="d10">
+        div 8
+        <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque rem animi libero doloribus nesciunt fugiat impedit error distinctio autem, inventore dolore modi quo adipisci at eum, praesentium nihil optio.
+        Iusto, consequuntur? Delectus dolore iusto libero nulla laborum recusandae adipisci placeat eum. Voluptatibus cumque placeat nisi explicabo facilis qui velit iste tempora. Consequuntur veritatis aliquid quisquam, aspernatur magnam qui fugiat!
+        Velit totam ipsa incidunt illum laborum repellendus optio autem quae, similique dolore recusandae voluptas nemo vero est a cum eum ipsam possimus amet tempore in eaque, praesentium, facilis atque? Ipsa?
+        Ipsam minus fugiat debitis tempora modi non cupiditate voluptatum omnis eligendi, ullam magnam inventore voluptatibus, explicabo, doloremque quo voluptate consequatur quisquam mollitia nobis ipsum sint quod hic? Aspernatur, laborum quis.
+    </div>
+    <br><br>
+    <a href="https:www.google.com" target="_blank">
+        click here to go to google.com
+    </a>
+    <br><br>
+    <label for="em"> Email :</label> <input type="email" placeholder="Email..">
+    <ul>
+        <li>1...</li>
+        <li>2...</li>
+        <li class="special">3....</li>
+    </ul>
+</body>
+</html>
