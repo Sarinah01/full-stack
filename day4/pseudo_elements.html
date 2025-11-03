@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .p1::first-line{
+        color: blue;
+        font-size: 50px;
+        font-style: italic;
+    }
+    .p1::first-letter{
+        color: yellow;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+    .p1::selection
+{
+    background-color: rgb(68, 42, 9);
+    color: pink;
+}
+.p1::before{
+    content: "😀😁😄😎😑😶🤤😋😋😈👿👹👺💀🐱‍👤☠👽👻👾👻😼😽😿🐵";
+}
+.p2::before{
+    content: url("cat.jfif");
+}
+ul li::marker{
+    font-size: 30px;
+    color: purple;
+    content: "*";
+}
+.d1{
+    display: inline-block;
+}
+.d1 div{
+    display: inline-block;
+    padding: 20px;
+    width: 50px;
+    height: 100px;
+    text-align: center;
+    margin: 10px;
+    border: 3px solid rebeccapurple;
+    background-color: rgba(212, 153, 218, 0.678);
+    color: rebeccapurple;
+}
+.d1 div:nth-child(2){
+    display: none;
+}
+.d2 span{
+    display: block;
+    text-align: center;
+    width: 90px;
+    padding: 46px;
+    margin: 10px auto;
+    background-color: rgba(158, 158, 252, 0.664);
+    border: 2px solid blue;
+    color: darkblue;
+    font-weight: 900;
+    border-radius: 30px;
+    height: 20px;
+}
+</style>
+<body>
+    <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellendus expedita inventore error quisquam praesentium, molestias ad id non quibusdam sed. Neque velit deserunt quae sequi eos vitae temporibus maxime!
+    A sit sunt iste eum quia dignissimos. Incidunt dolorem aspernatur dolore excepturi sequi maiores facere tempore. Ea, quas sunt ab consectetur, a, necessitatibus ratione cupiditate veritatis magni at voluptates reprehenderit?
+    Ea ipsam cupiditate explicabo accusantium aspernatur quibusdam non eos? Suscipit vel quia delectus repellendus repellat sed at tempore deleniti, et, eligendi officia similique accusantium corrupti minima ab illo facere. Laudantium.
+    Aspernatur ipsum quidem similique, odit repellat dignissimos mollitia vitae vel, quibusdam, modi fuga. Illo eos neque iste. Rem necessitatibus nesciunt reprehenderit amet? Reprehenderit, illo consequatur voluptates voluptatibus ea voluptatem praesentium.
+</p>
+<p class="p2">
+    hiiiiiiiiii
+</p>
+<ul>
+    <li>html</li>
+    <li>CSS</li>
+    <li>JS</li>
+</ul>
+<div class="d1">
+    <div>con1</div>
+    <div>con2</div>
+    <div>con3</div>
+</div>
+<div class="d2">
+    <span>
+        b1
+    </span>
+    <span>
+        b2
+    </span>
+    <span>
+        b3
+    </span>
+</div>
+</body>
+</html>
