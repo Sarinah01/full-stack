@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .g1{
+        display: grid;
+        grid-template-columns: 200px 1fr 2fr 1fr 2fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        gap: 10px;
+        background-color: blue;
+        padding: 30px;
+        margin: 30px;
+    }
+    .box , .item
+    {
+        background-color: yellowgreen;
+        border: 2px solid green;
+        padding: 20px;
+    }
+    .g2{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 100px;
+        height: 100px;
+        gap: 10px;
+        border: 2px solid grey;
+    }
+</style>
+<body>
+    <div class="g1">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+         <div class="box">4</div>
+    </div>
+    <div class="g2">
+        <div class="item">i1</div>
+        <div class="item">i2</div>
+        <div class="item">i3</div>
+        <div class="item">i4</div>
+    </div>
+</body>
+</html>
