@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .d1{
+        margin: 100px auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50px;
+        font-size: 30px;
+        border: 2px solid blue;
+        background-color: rgb(167, 167, 167);
+        text-align: center;
+        padding: 20px;
+        transition-property:transform, background-color, border-radius ;
+        transition-duration: 5s ,1s,1s;
+        transition-delay: 1s;
+        transition-timing-function: ease-in;
+    }
+    .a3,.a4,.a5,.a2{
+        height: 105px;
+        width: 200px;
+        margin: 30px auto;
+        display: block;
+        padding: 20px;
+        background-color: burlywood;
+        border: 10px solid black;
+        align-items: center;
+        transition-property:transform, background-color, border-radius ;
+        transition-duration: 5s ,1s,1s;
+        transition-delay: 1s;
+        transition-timing-function: ease-in;
+    }
+    .d1:hover{
+        background-color: orange;
+        transform: rotate(25deg);
+        /*transform: translate(50px);*/
+        transform: translate3d(20px);
+        padding: 30px;
+        border-radius: 10px;
+        border: 3px solid blue;
+    }
+    /**.b1{
+        display: block;
+        height: 40px;
+        width: 100px;
+        padding: 15px;
+        text-align: center;
+        margin: 20px auto;
+        background-color: green;
+        color: white;
+        font-weight: 900;
+        
+        border: 2px solid rgb(0, 0, 0);
+    }
+     .b1:hover{
+        background-color: rgb(73, 2, 2);
+        display: none;
+        transform: transform(1);
+        content: "Danger!";
+    } **/
+
+    .b1 {
+    display: block;
+    height: 40px;
+    width: 100px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: green;
+    color: white;
+    font-weight: 900;
+    border: 2px solid rgb(0, 0, 0);
+    position: relative;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+.b1::after {
+    content: "Danger!";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 900;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.b1:hover::after {
+    opacity: 1;
+}
+
+.b1:hover {
+    color: transparent;
+    background-color: rgb(73, 2, 2);
+}
+
+    .a3:hover{
+        transform: scale(1.5);
+        opacity: 0.5;
+    }
+    .a4:hover{
+        transform:scale(1.5,2);/**width,height**/
+        opacity: 0.2;
+        transform: scale(-1);
+        content: url("i3.png");
+        /** -3 or 3 size increase -1 mirror img**/
+    }
+    .a5:hover{
+        transform: skew(30deg);
+        transform: translate(1) rotate(35deg) skew(1.5);
+    }
+    .a2:hover{
+        transform:rotate(60deg) translate(10px) skew(20.5deg) ;
+        box-shadow: 10px 20px 10px blue;
+        background-color: darkcyan;
+        
+       
+    }
+</style>
+<body>
+    <div class="d1">Transform</div>
+    <img src="i3.png" alt="" class="a3"><br><br><br>
+    <img src="i1.png" alt="" class="a4">
+    <img src="i4.png" alt="" class="a5">
+    <img src="i2.png" alt="" class="a2">
+    <button id="sub" class="b1">Submit</button>
+</body>
+</html>

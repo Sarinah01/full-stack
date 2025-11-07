@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .d1{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(85, 85, 94);        
+        border-radius: 10px;
+        margin: 10px auto;
+        animation-name: ani;
+        animation-duration: 3s;
+        animation-delay: 0s;
+        animation-iteration-count: 4;
+        animation-direction: reverse;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes ani{
+        from{
+            background-color: rgb(75, 0, 12);
+        }
+        to{
+            background-color: yellow;
+        }
+    }
+
+   .d2 {
+    height: 10px;
+    width: 0px;
+    border-radius: 10px;
+    background-color: aquamarine;
+    
+    animation: loadingBar 2s ease-in-out infinite;
+}
+
+@keyframes loadingBar {
+    0% {
+        width: 0px;
+        background-color: blue;
+    }
+    50% {
+        width: 50px;
+        background-color: aquamarine;
+    }
+    100% {
+        width: 100px;
+        background-color: blue;
+    }
+}
+
+</style>
+<body>
+    <div class="d1">
+        Animationsssss
+    </div>
+    <div class="d2"></div>
+
+</body>
+</html>
