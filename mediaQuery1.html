@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: yellowgreen;
+    }
+    h1{
+        color: purple;
+        font-size: 40px;
+        text-align: center;
+    }
+    @media screen and (min-width:400px) and (max-width:800px) {
+        body{
+            background-color: lightblue ;
+        }
+        h1{
+            font-size: 40px;
+            color: blueviolet;
+        }
+    }
+
+    @media screen and (max-width:400px){
+        body{
+            background-color: pink;
+        }
+        h1{
+            color: aliceblue;
+            font-size: 40px;
+        }
+    }
+
+    @media not (orientation:landscape){
+        h1{
+            text-decoration: underline;
+            color: brown;
+        }
+        body{
+            background-color: cadetblue;
+        }
+    }
+
+</style>
+<body>
+    <h1>
+        Welcome to my Website
+    </h1>
+</body>
+</html>
